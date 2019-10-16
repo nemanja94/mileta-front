@@ -1,0 +1,13 @@
+<div class="container card-columns">
+  <div class="card bg-light shadow my-4" *ngFor="let item of stuff">
+    <img src="{{item.imageUrl}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <!-- <p class="card-text">{{item.description}}</p> -->
+      <p class="card-text">{{item.price}}</p>
+    </div>
+    <div class="card-footer text-center" routerLink="/detalji/{{item._id}}">
+      <a class="btn text-dark" >Više detalja</a>
+    </div>
+  </div>
+</div>

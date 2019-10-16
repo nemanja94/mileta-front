@@ -1,0 +1,17 @@
+<button class="btn btn-dark my-5 ml-5 shadow" routerLink="/{{tip | lowercase}}">Nazad</button>
+<div class="container px-0 pb-5 mb-5 mt-0 border-danger shadow bg-light rounded">
+	<div id="carouselExampleSlidesOnly" class="carousel slide m-0" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="{{stuff.imageUrl}}" class="d-block w-100 rounded shadow" alt="...">
+			</div>
+		</div>
+	</div>
+	<div class="container text-justify px-4 bg-light">
+		<h2 class="text-dark mt-5 mb-5">{{stuff.title}}</h2>
+		<h4 class="text-dark">Opis:</h4>
+		<p class="text-dark text-justify mb-3">{{stuff.description}}</p>
+		<h5 class="text-dark mb-3">Poreklo: {{stuff.poreklo}}</h5>
+		<!-- <h5 class="text-dark">Cena: {{stuff.price}}</h5> -->
+	</div>
+</div>
