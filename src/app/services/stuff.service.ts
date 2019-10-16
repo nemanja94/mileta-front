@@ -13,25 +13,25 @@ export class StuffService {
 	constructor(private _http: HttpClient) { }
 
 	getStuff(): Observable<Thing[]> {
-		return this._http.get('http://localhost:3000/api/stuff').pipe(map((res: Thing[]) => {
+		return this._http.get('http://localhost:27234/api/stuff').pipe(map((res: Thing[]) => {
 			return res;
 		}));
 	}
 
 	getOne(id: string): Observable<Thing> {
-		return this._http.get('http://localhost:3000/api/stuff/' + id).pipe(map((res: Thing) => {
+		return this._http.get('http://localhost:27234/api/stuff/' + id).pipe(map((res: Thing) => {
 			return res;
 		}));
 	}
 
 	getGranit(): Observable<Thing[]> {
-		return this._http.get('http://localhost:3000/api/stuff/granit').pipe(map((res: Thing[]) => {
+		return this._http.get('http://localhost:27234/api/stuff/granit').pipe(map((res: Thing[]) => {
 			return res;
 		}));
 	}
 
 	getMermer(): Observable<Thing[]> {
-		return this._http.get('http://localhost:3000/api/stuff/mermer').pipe(map((res: Thing[]) => {
+		return this._http.get('http://localhost:27234/api/stuff/mermer').pipe(map((res: Thing[]) => {
 			return res;
 		}));
 	}
