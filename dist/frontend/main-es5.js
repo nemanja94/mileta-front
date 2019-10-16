@@ -545,7 +545,7 @@
                     var thingId = this._activatedRoute.snapshot.paramMap.get('id');
                     this._stuffService.getOne(thingId).subscribe(function (stuff) {
                         _this.stuff = stuff;
-                        _this.tip = stuff['tip'];
+                        _this.tip = stuff.tip;
                     });
                 };
                 return DetaljiComponent;

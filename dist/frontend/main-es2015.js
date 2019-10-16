@@ -523,7 +523,7 @@ let DetaljiComponent = class DetaljiComponent {
         const thingId = this._activatedRoute.snapshot.paramMap.get('id');
         this._stuffService.getOne(thingId).subscribe((stuff) => {
             this.stuff = stuff;
-            this.tip = stuff['tip'];
+            this.tip = stuff.tip;
         });
     }
 };

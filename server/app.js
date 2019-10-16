@@ -6,7 +6,7 @@ const path = require('path');
 
 const stuffRoutes = require('./routes/stuff');
 const userRoutes = require('./routes/user');
-const publicweb = process.env.PUBLICWEB || '../dist/frontend';
+const publicweb = process.env.PUBLICWEB || './dist/frontend';
 
 const app = express(); // Inicijalizacija app
 

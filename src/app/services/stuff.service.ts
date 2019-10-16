@@ -18,8 +18,8 @@ export class StuffService {
 		}));
 	}
 
-	getOne(id: string): Observable<Thing[]> {
-		return this._http.get('http://localhost:3000/api/stuff/' + id).pipe(map((res: Thing[]) => {
+	getOne(id: string): Observable<Thing> {
+		return this._http.get('http://localhost:3000/api/stuff/' + id).pipe(map((res: Thing) => {
 			return res;
 		}));
 	}

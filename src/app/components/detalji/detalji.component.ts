@@ -11,7 +11,7 @@ import { Thing } from '../../models/Thing.model';
 })
 export class DetaljiComponent implements OnInit {
 
-	public stuff: Thing[];
+	public stuff: Thing;
 	public tip: string;
 
 	constructor(private _activatedRoute: ActivatedRoute, private _stuffService: StuffService) { }
@@ -26,7 +26,7 @@ export class DetaljiComponent implements OnInit {
 		this._stuffService.getOne(thingId).subscribe(
 			(stuff) => {
 				this.stuff = stuff;
-				this.tip = stuff['tip'];
+				this.tip = stuff.tip;
 			});
 	}
 
