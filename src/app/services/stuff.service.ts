@@ -25,7 +25,7 @@ export class StuffService {
 	}
 
 	getGranit(): Observable<Thing[]> {
-		return this._http.get('https://mileta-back.herokuapp.com/stuff/granit').pipe(map((res: Thing[]) => {
+		return this._http.get('https://mileta-back.herokuapp.com/api/stuff/granit').pipe(map((res: Thing[]) => {
 			return res;
 		}));
 	}
