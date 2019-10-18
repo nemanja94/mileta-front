@@ -11,23 +11,20 @@ import { Thing } from '../../models/Thing.model';
 })
 export class DetaljiComponent implements OnInit {
 
-	public stuff: Thing;
+	public thing: Thing = new Thing();
 	public tip: string;
+	public imageUrl: string;
 
 	constructor(private _activatedRoute: ActivatedRoute, private _stuffService: StuffService) { }
 
 	ngOnInit() {
-		this.loadThing();
-	}
-
-	loadThing() {
 		const thingId = this._activatedRoute.snapshot.paramMap.get('id');
 
 		this._stuffService.getOne(thingId).subscribe(
-			(stuff) => {
-				this.stuff = stuff;
-				this.tip = stuff.tip;
+			(thing) => {
+				this.thing = thing;
+				this.tip = thing.tip;
+				this.imageUrl = thing.imageUrl;
 			});
 	}
-
 }

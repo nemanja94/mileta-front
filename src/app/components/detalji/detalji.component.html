@@ -3,15 +3,15 @@
 	<div id="carouselExampleSlidesOnly" class="carousel slide m-0" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="{{stuff.imageUrl}}" class="d-block w-100 rounded shadow" alt="...">
+				<img [src]="imageUrl" class="d-block w-100 rounded shadow" alt="...">
 			</div>
 		</div>
 	</div>
 	<div class="container text-justify px-4 bg-light">
-		<h2 class="text-dark mt-5 mb-5">{{stuff.title}}</h2>
+		<h2 class="text-dark mt-5 mb-5">{{thing.title}}</h2>
 		<h4 class="text-dark">Opis:</h4>
-		<p class="text-dark text-justify mb-3">{{stuff.description}}</p>
-		<h5 class="text-dark mb-3">Poreklo: {{stuff.poreklo}}</h5>
-		<!-- <h5 class="text-dark">Cena: {{stuff.price}}</h5> -->
+		<p class="text-dark text-justify mb-3">{{thing.description}}</p>
+		<h5 class="text-dark mb-3">Poreklo: {{thing.poreklo}}</h5>
+		<!-- <h5 class="text-dark">Cena: {{thing.price}}</h5> -->
 	</div>
 </div>
